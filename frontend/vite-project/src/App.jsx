@@ -20,7 +20,7 @@ return res.data.payment_session_id
 console.log(error)
 }
 }
-const verifyPayment = async () => {
+const verifyPayment = async (orderId) => {
 try {
 let res = await axios.post("http://localhost:8000/verify", {
 orderId: orderId
